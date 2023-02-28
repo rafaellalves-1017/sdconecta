@@ -1,0 +1,21 @@
+server:
+  servlet:
+    context-path: /api
+    charset: UTF-8
+    enabled: true
+    force: true  
+  port: 8080
+  tomcat:
+    max-connections: 1000000
+    max-threads: 1000000
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+  data:
+    mongodb:
+        uri: mongodb://localhost:27017/db_mb   
+        
+api:
+  url: https://api.github.com/users/
